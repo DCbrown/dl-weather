@@ -1,0 +1,9 @@
+<h2>Today's Forcast</h2>
+<div class="column">
+    <div class="card">
+        <h4><b>{{date | date:'M/d/yy, h:mm a'}}</b></h4>
+        <hr />
+        <img src="http://openweathermap.org/img/w/{{weatherData.weather[0].icon}}.png" alt="weather-icon" />
+        <p>{{weatherData.main.temp}}<span>&#8457;</span></p>
+    </div>
+</div>

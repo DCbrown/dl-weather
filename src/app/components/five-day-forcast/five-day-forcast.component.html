@@ -1,0 +1,11 @@
+<div class="row">
+    <h2>Five Day Forecast</h2>
+    <div class="column" *ngFor="let day of forcast">
+        <div class="card">
+            <h4><b>{{day.date | date: 'short'}}</b></h4>
+            <hr />
+            <img src="http://openweathermap.org/img/w/{{day.iconData.icon}}.png" alt="weather-icon" />
+            <p>{{day.temp}}<span>&#8457;</span></p>
+        </div>
+    </div>
+</div>

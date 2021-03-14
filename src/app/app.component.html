@@ -1,0 +1,6 @@
+<h3>Show Five day Forcast</h3>
+<ui-switch [(ngModel)]="showFiveDay"></ui-switch>
+<hr>
+
+<app-today-forcast *ngIf="!showFiveDay"></app-today-forcast>
+<app-five-day-forcast *ngIf="showFiveDay"></app-five-day-forcast>
