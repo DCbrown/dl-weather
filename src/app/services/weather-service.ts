@@ -13,7 +13,7 @@ export class WeatherService {
 
   // Call API for today's weather
   getTodayWeatherdata(Longitude, Latitude) {
-  return this.http.get(`${this.todayUrl}lat=${Latitude}&lon=${Longitude}&units=imperial&APPID=${this.apiKey}`);
+    return this.http.get(`${this.todayUrl}lat=${Latitude}&lon=${Longitude}&units=imperial&APPID=${this.apiKey}`);
   }
 
   // Call API for five day forcast weather
